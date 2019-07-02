@@ -21,7 +21,7 @@
     "parser": "^0.1.4",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
-    "sequelize": "^5.9.0",
+    "sequelize": "^5.9.2",
     "session": "^0.1.0",
     "strategy": "^1.1.1"
   },
