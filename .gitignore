@@ -1,3 +1,11 @@
+.DS_Store
+
+# config
+config/config.json
+
+# env
+.env
+
 # Logs
 logs
 *.log

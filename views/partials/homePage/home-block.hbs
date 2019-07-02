@@ -1,0 +1,187 @@
+<nav class="purple darken-2" role="navigation">
+  <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">GamersMingle</a>
+    <ul class="right hide-on-med-and-down">
+
+      <li><a href='/logout'>Logout</a></li>
+
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href='/logout'>Logout</a></li>
+
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col s2"></div>
+  <div class="col s2">
+
+
+    <div class="row">
+      <div class="col s12">
+        <div class="pictureContainer">
+          <div class="profile small purple">
+            <div class="cover"><img
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/sterling-davis-513079-unsplash.jpg" />
+              <div class="layer">
+                <div class="loader"></div>
+              </div>
+              {{!-- <a class="image-wrapper" href="#">
+                  <form id="coverForm" action="#">
+                    <input class="hidden-input" id="changeCover" type="file"/>
+                    <label class="edit glyphicon glyphicon-pencil" for="changeCover" title="Change cover"></label>
+                  </form></a> --}}
+            </div>
+            <div class="user-info">
+              <div class="profile-pic"><img
+                  src="https://cdn.pixabay.com/photo/2016/05/18/18/37/rubber-duck-1401225_960_720.jpg" />
+                <div class="layer">
+                  <div class="loader"></div>
+                </div><a class="image-wrapper" href="#">
+                  <form id="profilePictureForm" action="#">
+                    <input class="input" id="changePicture" type="file" />
+                    <label class="edit glyphicon glyphicon-pencil" for="changePicture" type="file"
+                      title="Change picture"></label>
+                  </form>
+                </a>
+              </div>
+              <div class="username">
+                <div class="userName white-text"><span class="verified"></span>Quack</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card purple darken-1 bottomsideCard">
+      <div class="card-action white-text" style="height:200px">
+        <h4>Friend's List</h4>
+        <hr>
+        <input type="text" id="searchFriend" placeholder="Search..">
+        <div class="friendList scrollBar left-align">
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  <div class="col s4">
+
+
+    <div class="row">
+      <div class="col s12 parent">
+
+        <div class="card grey darken-1 userPost">
+          <div class="card-content white-text">
+            <ul class="chatBox child " style="width: 85%; height: 90%; overflow: auto">
+              <li><strong id="userName">Pengu</strong><br><span id="userPost">Hello</span>
+                <hr><br></li>
+
+            </ul>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container" id="textBox">
+
+
+      <div class="col s12 middle ">
+        <div class="row card grey darken-1">
+          <div class="input-field col s10">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete" data-length="255">
+            <label for="autocomplete-input">Message<span></span></label>
+
+
+          </div>
+          <button class="btn waves-effect waves-light purple darken-2 col s2" id="messageBtn" type="submit"
+            name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <div class="col s2">
+
+    <div class="row">
+      <div class="col s12">
+        <div class="card purple darken-1 sideCard">
+          <div class="card-action white-text">
+            <h4>Games</h4>
+            <hr>
+
+
+            <a class="waves-effect waves-light btn modal-trigger purple darken-2" href="#modal1">Add Game</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+              <div class="modal-content black-text">
+                <h4>Add Game</h4>
+                <hr>
+                <input placeholder="Game's Title" id="gameTitle" type="text" class="validate">
+                <label for="addGameLink">Game's Title</label>
+                <input placeholder="Author" id="author" type="text" class="validate">
+                <label for="addGameLink">Author</label>
+                <input placeholder="Game URL" id="gameLink" type="text" class="validate">
+                <label for="addGameLink">Game's Link</label>
+                <br><br>
+                
+                <input class="input" id="gamePreview" type="file" />
+                <label for="gamePreview">(Optional) Game Preview</label>
+                <hr>
+
+                <button class="btn waves-effect waves-light purple darken-2 col s2" id="addGame" type="submit"
+                  name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+
+
+
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Exit</a>
+              </div>
+            </div>
+
+            <input type="text" id="searchGame" placeholder="Search..">
+            <div class="gameList scrollBar left-align">
+
+              <a id="gameLink" href="https://lov3tt.github.io/soloTetris/" target="_blank"><img id="gamePreview"
+                  src="https://s3.amazonaws.com/tetris-www/assets/article/2017/06/14/tetris-lingo-feature_feature.jpg"><span
+                  id="gameName">Tetris</span></a>
+              <p>Author: <span id="Author">GamersMingle</span></p>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div class="col s2"></div>
